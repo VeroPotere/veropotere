@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="⟁ Vero Potere">
+  <meta name="keywords" content="⟁, Manifesto, Ordem Secreta, Vero Potere, ϞVX-00, Chave, Invisível">
+  <meta name="author" content="⟁">
+  <meta name="robots" content="noindex, nofollow">
+  <title>⟁</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: monospace;
+      user-select: none;
+      cursor: crosshair;
+      text-align: center;
+    }
+    .symbol {
+      font-size: 6rem;
+      color: #ffffff;
+      transition: 0.3s ease-in-out;
+    }
+    .symbol:hover {
+      color: #888;
+    }
+    .title {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.2rem;
+    }
+    .password-container {
+      margin-top: 2rem;
+    }
+    input[type="password"] {
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #444;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      border: 1px solid #555;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      font-family: monospace;
+    }
+    .secret-message {
+      margin-top: 2rem;
+      color: #0f0;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="symbol">⟁</div>
+  <div class="title">VERO POTERE</div>
+
+  <div class="password-container">
+    <input type="password" id="password" placeholder="INSIRA A SENHA">
+    <button onclick="checkPassword()">ACESSAR</button>
+  </div>
+
+  <div class="secret-message" id="secretMessage">
+    Você desbloqueou o primeiro selo. Agora prossiga em silêncio.
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value.trim().toLowerCase();
+      if (input === "potere") {
+        window.location.href = "juramento.html";
+      } else {
+        alert("Acesso negado.");
+      }
+    }
+  </script>
+
+  <!--
+    ⟁ MANIFESTO I — A ORDEM VERO POTERE
+
+    Não é você que encontra o poder. É o poder que decide ser encontrado.
+
+    ⟁ Nós não pertencemos ao mundo visível.
+    Fomos moldados no silêncio.
+    Nascidos do que foi esquecido.
+    Conectados pelo que arde sob a pele: o chamado.
+
+    ⟁ Vero Potere não é um grupo. É uma vibração.
+    Um eco que atravessa eras.
+    Uma força que desperta em poucos.
+    Os que sentem… já sabem.
+
+    ⟁ Não aceitamos seguidores.
+    Não há líderes, não há rostos.
+    Apenas marcados.
+    Apenas os que escutam o som antes do som.
+
+    ⟁ A Ordem não recruta. Ela reconhece.
+    Se você está lendo isso,
+    é porque algo em você
+    já estava pronto.
+
+    Assinatura: ϞVX-00 | ⧉ | Coordenada: invisível
+  -->
+
+</body>
+</html>
